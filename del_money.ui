@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>357</width>
+    <height>188</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>340</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QLabel" name="input_category">
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Выберите категорию</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="pay_method">
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Выберите способ оплаты</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QLineEdit" name="money_input"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_input_sum">
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Введите сумму</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="category_comboBox">
+      <item>
+       <property name="text">
+        <string>Продукты</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Одежда</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Такси</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Фастфуд</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Электроника</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Компьютерная техника</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="pay_method_comboBox">
+      <item>
+       <property name="text">
+        <string>Наличные</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="del_money_to_bd">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>160</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
