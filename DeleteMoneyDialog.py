@@ -11,19 +11,22 @@ class DeleteMoneyDialog(QDialog):
         self.del_money_to_bd.clicked.connect(self.del_money_bd)
         self.database_test = database
         self.update_balance = func
+        with open('methods.txt', 'r', encoding='utf-8') as methods_file:
+            read = methods_file.read().split(',')
+            self.pay_method_comboBox.addItems(read)
+        with open('category.txt', 'r', encoding='utf-8') as category_file:
+            read = category_file.read().split(',')
+            self.category_comboBox.addItems(read)
 
     def del_money_bd(self):
-        try:
-            time_now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            money_to_del = int(self.money_input.text())
-            category = self.category_comboBox.currentText()
-            method_to_pay = self.pay_method_comboBox.currentText()
-            conn = sqlite3.connect('financial_management_db.db')
-            c = conn.cursor()
-            data = [time_now, 'Расход', str(money_to_del), category, method_to_pay]
-            c.execute('INSERT INTO transactions VALUES (?,?,?,?,?)', data)
-            conn.commit()
-            conn.close()
-            self.update_balance()
-        except Exception as e:
-            print(e)
+        time_now = datetime.datetime.now().strftime('%d-%m-%Y %H:%M:%S')
+        money_to_del = int(self.money_input.text())
+        category = self.category_comboBox.currentText()
+        method_to_pay = self.pay_method_comboBox.currentText()
+        con = sqlite3.connect('financial_management_db.db')
+        c = con.cursor()
+        data = [time_now, 'Расход', str(money_to_del), category, method_to_pay]
+        c.execute('INSERT INTO transactions VALUES (?,?,?,?,?)', data)
+        con.commit()
+        con.close()
+        self.update_balance()

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>319</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="add_credit">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>150</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Создать кредит</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="error_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>111</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="time_edit"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="sum_edit"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="percent_edit"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="day_edit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>171</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="time_label">
+      <property name="text">
+       <string>Введите срок кредита(мес.)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="sum_label">
+      <property name="text">
+       <string>Ввведите сумму кредита</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="percent_label">
+      <property name="text">
+       <string>Введите процентную ставку</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="day_label">
+      <property name="text">
+       <string>Какого числа списывать
+ежемесячный платеж</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

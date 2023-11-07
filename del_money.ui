@@ -65,48 +65,11 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="QComboBox" name="category_comboBox">
-      <item>
-       <property name="text">
-        <string>Продукты</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Одежда</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Такси</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Фастфуд</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Электроника</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Компьютерная техника</string>
-       </property>
-      </item>
-     </widget>
+    <item row="1" column="1" colspan="2">
+     <widget class="QComboBox" name="category_comboBox"/>
     </item>
-    <item row="2" column="1">
-     <widget class="QComboBox" name="pay_method_comboBox">
-      <item>
-       <property name="text">
-        <string>Наличные</string>
-       </property>
-      </item>
-     </widget>
+    <item row="2" column="1" colspan="2">
+     <widget class="QComboBox" name="pay_method_comboBox"/>
     </item>
    </layout>
   </widget>

@@ -11,9 +11,9 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Главное меню</string>
   </property>
-  <widget class="QLabel" name="balance">
+  <widget class="QLabel" name="balance_label">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -26,13 +26,15 @@
     <font>
      <family>Segoe Print</family>
      <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
     <string>БАЛАНС:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="balance_sum">
+  <widget class="QLabel" name="balance_sum_label">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -127,7 +129,7 @@
     <string>0</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="information_mission">
+  <widget class="QPushButton" name="information">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -149,7 +151,7 @@ background-color: #DCDCDC</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>300</y>
+     <y>340</y>
      <width>201</width>
      <height>21</height>
     </rect>
@@ -168,7 +170,7 @@ background-color: #DCDCDC</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>368</y>
+     <y>400</y>
      <width>201</width>
      <height>20</height>
     </rect>
@@ -180,14 +182,14 @@ background-color: #DCDCDC</string>
     </font>
    </property>
    <property name="text">
-    <string>0/3900</string>
+    <string>0/Money</string>
    </property>
   </widget>
   <widget class="QProgressBar" name="progress_mission">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>400</y>
+     <y>470</y>
      <width>201</width>
      <height>21</height>
     </rect>
@@ -200,7 +202,7 @@ background-color: #DCDCDC</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>330</y>
+     <y>370</y>
      <width>201</width>
      <height>25</height>
     </rect>
@@ -254,6 +256,100 @@ background-color: #DCDCDC</string>
    </property>
    <property name="text">
     <string>Добавить доход</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="settings_button">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>10</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string> ⚙️</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="currency_button">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>270</y>
+     <width>229</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #DCDCDC</string>
+   </property>
+   <property name="text">
+    <string>Изменить валюту накоплений</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_money_to_mission">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #DCDCDC</string>
+   </property>
+   <property name="text">
+    <string>Пополнить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mission_info_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>430</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #DCDCDC</string>
+   </property>
+   <property name="text">
+    <string>Взять</string>
    </property>
   </widget>
  </widget>
